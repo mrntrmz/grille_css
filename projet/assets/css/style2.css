@@ -1,0 +1,89 @@
+body { 
+    font-size: 1.1em; 
+    font-family: bitter;
+    line-height: 1.8em;
+}
+
+/*********DECLARATION DE LA GRILLE********/
+/*******CONTENU*******/
+.wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/******INITIALISATION DES COLONNES********/
+.column {
+    box-sizing: border-box;
+    float: left;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.column-4-12 { width: 33.33%; }
+    
+.colum:nth-child(4n){
+    clear: left;
+    color :red;
+}
+
+figure{ margin: 0 0 1.5em; }
+img{ width: 100%;}
+h1 { 
+    line-height: 1.2em; 
+    text-align: center;
+}
+.clear { clear: both; }  
+
+p { 
+    background-color:#f8f8f8;
+    margin-bottom: 1.5em;
+    color: dimgray;
+    padding: 1.9em;
+ }
+
+dl { 
+    padding:0.8em;
+    padding-bottom:0.4em;
+    text-align: center; 
+    background-color:#f8f8f8;
+}
+hr{
+    margin-top:0.8em;
+}
+dt {  Font-Weight:  bold;}
+.row { clear:left; }
+
+/*********ADAPTABILITE********/
+/**/
+@media only screen and (max-width: 48rem) {
+    .column-4-12 {  width: 50%; }
+    .colum:nth-child(4n){
+        clear: none;
+        color :red;
+    }
+    .colum:nth-child(5n){
+        clear: left;
+    }
+    p {
+        font-size: 0.8em;
+        line-height: 1.8em;
+    }
+}
+/**/
+@media only screen and (max-width: 35rem) {
+    .column-4-12 {  width: 100%; }
+    
+    body { line-height: 1.5em; }
+    h1 { 
+        text-align: center;
+        padding: 0.8em; 
+    }
+    figure{margin: 0px !important;}
+    img { width: 100%; }
+    p {  
+        font-size: 0.7em;
+        line-height: 1.8em;
+    }
+    ul { padding-left: 1.9em; }
+}
+
